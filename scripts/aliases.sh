@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+alias c="reset && printf '\033[3J'"
+alias chard="c;history -c"
+alias bigfiles="du -a -h | sort -hr | head -n20"
+alias gs="git status -s"
+alias countfiles="find . -type f | wc -l"
+alias moncpu="top -user berryvm -o cpu"
+alias mkvenv="mkdir venv && virtualenv -p {$1} venv"
+alias mkproj="cdp && mkdir $1; cdp $1"
+alias gut="git"
+alias math="php -r 'echo($1.PHP_EOL)'"
